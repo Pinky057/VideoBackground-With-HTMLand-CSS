@@ -1,12 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.hero{
-   position: absolute;
+.hero {
+  position: absolute;
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -18,7 +18,7 @@
   transition: 0.5s;
 }
 
-.hero nav{
+.hero nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,42 +30,38 @@
   align-items: center;
 }
 
-.hero video{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-opacity: 0.8;
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
 }
 
-nav .logo{
-    width: 90px;
-    cursor: pointer;
-    border-radius:50%;
-         transition: 0.2s;
-
-
+nav .logo {
+  width: 90px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
 }
 nav ul li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding:20px;
-             transition: 0.2s;
-
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 20px;
+  transition: 0.2s;
 }
-nav ul li a:hover{
-    letter-spacing:4px;
+nav ul li a:hover {
+  letter-spacing: 4px;
 }
-.overlay
-{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,41 +70,38 @@ nav ul li a:hover{
   background: #645c49;
   mix-blend-mode: overlay;
 }
-.text
-{
+.text {
   position: relative;
   z-index: 10;
 }
 
-.text h2
-{
+.text h2 {
   font-size: 5em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
-           transition: 0.2s;
-
+  transition: 0.2s;
 }
-.text h3
-{
+.text h3 {
   font-size: 2em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
-  
 }
-.text p
-{
+.text p {
   font-size: 1em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
 }
-.text button
-{
+.text button a {
+  text-decoration: none;
+  color: gray;
+}
+.text button {
   display: inline-block;
   font-size: 1em;
   background: #fff;
@@ -117,79 +110,69 @@ nav ul li a:hover{
   border: none;
   font-weight: 500;
   margin-top: 10px;
-  color: gray;
   letter-spacing: 2px;
   transition: 0.2s;
   border-radius: 5px;
 }
-.text button:hover
-{
+.text button:hover {
   letter-spacing: 8px;
 }
-.social{
-    position: absolute;
-    bottom:20px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;;
+.social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social li {
-    list-style: none;
+  list-style: none;
 }
-.social li a
-{
+.social li a {
   display: inline-block;
   text-align: center;
   margin-right: 30px;
   color: #fff;
-  font-size:60px;
+  font-size: 60px;
   transform: scale(0.5);
   transition: 0.5s;
 }
-.social li a:hover
-{
+.social li a:hover {
   transform: scale(0.8) translateY(-15px);
 }
 
-@media  (max-width: 600px)
-{
+@media (max-width: 600px) {
   .hero,
-  .hero nav
-  {
+  .hero nav {
     padding: 40px;
   }
-  nav .logo{
+  nav .logo {
     width: 60px;
-     border-radius:50%;
+    border-radius: 50%;
   }
-  nav ul li a{
+  nav ul li a {
     font-weight: 600;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  .text h2
-  {
+  .text h2 {
     font-size: 2em;
   }
-  .text h3
-  {
+  .text h3 {
     font-size: 1em;
   }
-  .text p{
+  .text p {
     transition: 0.2s;
-    font-size:.8em;
+    font-size: 0.8em;
   }
-  .text button{
-    font-size:.8em;
+  .text button {
+    font-size: 0.8em;
     padding-bottom: 10px;
   }
-  .text button:hover
-{
-  letter-spacing: .4em;
-}
-  .social li a{
-    padding-top:20px;
+  .text button:hover {
+    letter-spacing: 0.4em;
+  }
+  .social li a {
+    padding-top: 20px;
     font-size: 40px;
   }
-
 }
